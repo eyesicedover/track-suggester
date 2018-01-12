@@ -6,6 +6,7 @@ var cCounter = 0;
 var jobDesc = "";
 var difficulty = "";
 var jobOpen = "";
+var employer - "";
 var resources = "";
 var whatToDo = "";
 
@@ -35,6 +36,15 @@ function tally(jobDesc, difficulty, jobOpen, resources, whatToDo) {
   } else if (jobOpen === "C") {
     cCounter++;
   } else if (jobOpen === "PHP") {
+    phpCounter++;
+  } else {
+    rubyCounter++;
+  }
+  if (employer === "Java") {
+    javaCounter++;
+  } else if (employer === "C") {
+    cCounter++;
+  } else if (employer === "PHP") {
     phpCounter++;
   } else {
     rubyCounter++;
@@ -88,6 +98,7 @@ $(document).ready(function(){
     jobDesc = $("input:radio[name=jobDesc]:checked").val();
     difficulty = $("input:radio[name=difficulty]:checked").val();
     jobOpen = $("input:radio[name=jobOpen]:checked").val();
+    employer = $("input:radio[name=jobOpen]:checked").val();
     resources = $("input:radio[name=resources]:checked").val();
     whatToDo = $("input:radio[name=whatToDo]:checked").val();
 
