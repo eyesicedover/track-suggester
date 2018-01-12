@@ -25,10 +25,10 @@
             <input id="userName" class="form-control" type="text">
           </div>
           <br>
-          <p>1. Which of these choices would most describe what you would like to do in your future job?
+          <p>1. Which of these choices would most describe what you would like to do in your future job?</p>
           <div class="radio">
             <label>
-              <input type="radio" name="jobDesc" value="C#">
+              <input type="radio" name="jobDesc" value="C#" checked>
               Working at a company where we create software for businesses. We can make software for Windows, Macs, and Linux.
             </label>
           </div>
@@ -52,7 +52,7 @@
           </div>
           <br>
 
-          <p>2. I want my first language to be...
+          <p>2. I want my first language to be...</p>
           <div class="radio">
             <label>
               <input type="radio" name="difficulty" value="Ruby" checked>
@@ -79,7 +79,7 @@
           </div>
           <br>
 
-          <p>3. My first language will match up to _______ of job postings right off the bat.
+          <p>3. My first language will match up to _______ of job postings right off the bat.</p>
           <div class="radio">
             <label>
               <input type="radio" name="jobOpen" value="Java" checked>
@@ -104,8 +104,77 @@
               Few
             </label>
           </div>
+          <br>
 
+          <p>4. My first language will have ______ of open source projects for me to learn from or use on GitHub.</p>
+          <div class="radio">
+            <label>
+              <input type="radio" name="resources" value="Java" checked>
+              LOTS!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="resources" value="C#">
+              Plenty
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="resources" value="Ruby">
+              Some
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="resources" value="PHP">
+              Few (but they aren't really necessary anyways)
+            </label>
+          </div>
+
+          <p>5. If you're not looking necessarily to get a job, what do you want to do with this language?</p>
+          <div class="radio">
+            <label>
+              <input type="radio" name="" value="Java" checked>
+              Build apps for Android, or other devices like the Kindle Fire. Or I want to build web apps.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="" value="PHP">
+              Work with WordPress. Did you know that 25% of all websites in the world work on WordPress?
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="" value="C#">
+              Making apps for Windows, or making video games.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="" value="Ruby">
+              Mostly web applications. Or if I put in a little more work, make iOS or Mac apps.
+            </label>
+          </div>
         </form>
+
+        <div class="resultJava">
+          <p>According to your results <p id="name"></p>, you should study Java!</p>
+          <p>Java is a great language because it's so ubiquitous and one of the easier ones to learn! You can use it to make just about anything, such as computer or Andriod apps, and it has some of the highest number of job prospects. Finally, because it's so popular, there's a huge amount of resources for you to draw upon and a large community for you to interact with.</p>
+        </div>
+        <div class="resultC#">
+          <p>According to your results <p id="name"></p>, you should study C#!</p>
+          <p>C# tends to be used by large and established companies, which means that it's usage is relatively stable. The language is backed by Microsoft, and Microsoft has open sourced the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. Apart from all that, you can use this language to get into game development!</p>
+        </div>
+        <div class="resultRuby">
+          <p>According to your results <p id="name"></p>, you should study Ruby!</p>
+          <p>Ruby is a great language to learn because it resembles human speech, making it fairly easy to understand. With Ruby you can make interactive websites that take user info, rapidly prototype ideas, and so much more. If you learn Ruby on Rails, you can do more complex tasks, if you learn JRuby you can make Java apps, andif you learn RubyMotion you can build native iOS and even Android apps! While this language doesn't have a lot of job postings, there is still a high demand for skilled Ruby (typically Ruby on Rails) programmers. Ruby is here to stay, after all it's used by websites such as Twitter, Hulu, Airbnb, and GitHub!</p>
+        </div>
+        <div class="resultPHP">
+          <p>According to your results <p id="name"></p>, you should study PHP!</p>
+          <p>PHP is a great language to learn because it's used all over the place, you just can't see it like Java and C#. 80% of all websites use PHP! It can be used to develop websites, but it's generally used for servers, databases, and back-end development. Another cool thing is that PHP can be used on all major operating systems. While there are few postings for PHP jobs, you can be assured we will always need people to work with servers and maintain the back end!
+        </div>
       </div>
     </div>
   </body>
