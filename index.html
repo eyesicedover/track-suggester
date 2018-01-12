@@ -8,6 +8,105 @@
     <title>Track Suggestion</title>
   </head>
   <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Programming Track Survey</h1>
+      </div>
+      <h4>Hello! Do you seem to have trouble deciding which programming language you should learn? You've come to the right place. Below is a survey that will give a language suggestion based on your responses.</h4>
+      <h4>Press start to begin.</h4>
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-primary" id="start">Start</button>
+      </div>
 
+      <div class="survey">
+        <form id="surveyForm">
+          <div class="form-group">
+            <label for="userName">Please enter your name in the field below:</label>
+            <input id="userName" class="form-control" type="text">
+          </div>
+          <br>
+          <p>1. Which of these choices would most describe what you would like to do in your future job?
+          <div class="radio">
+            <label>
+              <input type="radio" name="jobDesc" value="C#">
+              Working at a company where we create software for businesses. We can make software for Windows, Macs, and Linux.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="jobDesc" value="PHP">
+              I think I'd like to make all kinds of websites or maintain existing ones. I could also work on the servers that maintain those websites.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="jobDesc" value="Java">
+              I want to have flexibility in my work, or I'm not sure right now exactly what I want to do. I might want to work on building Android apps, or high-performance applications, or all kinds of things!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="jobDesc" value="Ruby">
+              I'd like to work with interactive web apps, dealing with making the site dynamic and taking user input information.
+            </label>
+          </div>
+          <br>
+
+          <p>2. I want my first language to be...
+          <div class="radio">
+            <label>
+              <input type="radio" name="difficulty" value="Ruby" checked>
+              Really easy to learn.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="difficulty" value="Java">
+              Relatively easy, but I want a bit of challenge.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="difficulty" value="C#">
+              Medium difficulty, but I could use what I learn to learn similar languages.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="difficulty" value="PHP">
+              To be a challenge! I want to learn many different concepts quickly.
+            </label>
+          </div>
+          <br>
+
+          <p>3. My first language will match up to _______ of job postings right off the bat.
+          <div class="radio">
+            <label>
+              <input type="radio" name="jobOpen" value="Java" checked>
+              LOTS!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="JobOpen" value="C#">
+              Plenty
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="jobOpen" value="Ruby">
+              Some
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="jobOpen" value="PHP">
+              Few
+            </label>
+          </div>
+
+        </form>
+      </div>
+    </div>
   </body>
 </html>
