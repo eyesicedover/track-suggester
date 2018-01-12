@@ -6,7 +6,7 @@ var cCounter = 0;
 var jobDesc = "";
 var difficulty = "";
 var jobOpen = "";
-var employer - "";
+var employer = "";
 var resources = "";
 var whatToDo = "";
 
