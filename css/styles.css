@@ -1,6 +1,20 @@
+body {
+  background-image: url(https://media.istockphoto.com/vectors/internet-technology-and-programming-seamless-background-with-linear-vector-id507208724);
+}
+
 h1, h3, h4 {
   text-align: center;
   margin-top: 15px;
+}
+
+.container {
+  background-color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.jumbotron {
+  background: linear-gradient(#14b2e6, #f7edc5);
 }
 
 .question{
@@ -13,4 +27,6 @@ h1, h3, h4 {
 
 #resultJava, #resultPHP, #resultRuby, #resultC, #resultSplit {
   display: none;
+  text-align: center;
+  padding-bottom: 20px;
 }

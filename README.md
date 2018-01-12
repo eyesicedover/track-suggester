@@ -6,7 +6,7 @@
 
 ## _Description_
 
-Webpage designed to take user input in the form of a survey and return to them a suggestion as to what programming track they should take.
+Webpage designed to take user input in the form of a survey and return to them a suggestion as to what programming track they should take. The site begins with a blurb and a start button. When pressed the start button will disappear and the survey will show up. After inputting your name and answering all the questions, press submit. After submission the survey will disappear and your result will appear on the page. Refresh to reset the survey.
 
 ## _Setup/Installation Requirements_
 
@@ -17,7 +17,7 @@ Webpage designed to take user input in the form of a survey and return to them a
 
 ## _Known Bugs_
 
-No currently known bugs.
+Minor bug: pressing the enter key when the survey screen appears will bring up a result before you have entered any survey answers. Please wait until the end of the survey to press submit or the enter key.
 
 ## _Support and contact details_
 
@@ -27,7 +27,7 @@ If you have any issues or questions please contact me via email. Email: eyesiced
 
 * HTML
 * CSS
-* Bootstrap (not the minified version)
+* Bootstrap
 * JavaScript
 * Jquery-3.2.1.
 

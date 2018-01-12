@@ -75,11 +75,11 @@ function surveyResult(javaCounter, phpCounter, rubyCounter, cCounter) {
 }
 
 $(document).ready(function(){
-  $("#start").click(function() {
+  $("#start_btn").click(function() {
     event.preventDefault();
-    $("#start").fadeOut();
+    $("#start_btn").fadeOut();
     $(".intro").fadeOut();
-    $("#surveyForm").delay(900).fadeIn();
+    $("#surveyForm").delay(800).fadeIn();
   });
 
   $("#surveyForm").submit(function(event){
@@ -97,16 +97,17 @@ $(document).ready(function(){
     surveyResult(javaCounter, phpCounter, rubyCounter, cCounter);
 
     if (surveyResultOutcome === 1) {
-      $("#resultJava").show();
+      $("#resultJava").delay(800).fadeIn();
     } else if (surveyResultOutcome === 2) {
-      $("#resultPHP").show();
+      $("#resultPHP").delay(800).fadeIn();
     } else if (surveyResultOutcome === 3) {
-      $("#resultRuby").show();
+      $("#resultRuby").delay(800).fadeIn();
     } else if (surveyResultOutcome === 4) {
-      $("#resultC").show();
+      $("#resultC").delay(800).fadeIn();
     } else {
-      $("#resultSplit").show();
+      $("#resultSplit").delay(800).fadeIn();
     }
-
+    $("#submit_btn").fadeOut();
+    $("#surveyForm").fadeOut();
   });
 });
