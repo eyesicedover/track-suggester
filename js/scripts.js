@@ -2,14 +2,12 @@ var javaCounter = 0;
 var phpCounter = 0;
 var rubyCounter = 0;
 var cCounter = 0;
-
 var jobDesc = "";
 var difficulty = "";
 var jobOpen = "";
 var employer = "";
 var resources = "";
 var whatToDo = "";
-
 var surveyResultOutcome = 0;
 
 function tally(jobDesc, difficulty, jobOpen, resources, whatToDo) {
@@ -67,9 +65,7 @@ function tally(jobDesc, difficulty, jobOpen, resources, whatToDo) {
   } else {
     rubyCounter++;
   }
-
 }
-
 function surveyResult(javaCounter, phpCounter, rubyCounter, cCounter) {
   if (javaCounter > phpCounter && javaCounter > rubyCounter && javaCounter > cCounter) {
     surveyResultOutcome = 1;
@@ -83,7 +79,6 @@ function surveyResult(javaCounter, phpCounter, rubyCounter, cCounter) {
     surveyResultOutcome = 5;
   }
 }
-
 $(document).ready(function(){
   $("#start_btn").click(function() {
     event.preventDefault();
@@ -91,7 +86,6 @@ $(document).ready(function(){
     $(".intro").fadeOut();
     $("#surveyForm").delay(800).fadeIn();
   });
-
   $("#surveyForm").submit(function(event){
     event.preventDefault();
     var name = $("input#userName").val();
@@ -101,9 +95,7 @@ $(document).ready(function(){
     employer = $("input:radio[name=jobOpen]:checked").val();
     resources = $("input:radio[name=resources]:checked").val();
     whatToDo = $("input:radio[name=whatToDo]:checked").val();
-
     $(".name").text(name);
-
     tally(jobDesc, difficulty, jobOpen, resources, whatToDo);
     surveyResult(javaCounter, phpCounter, rubyCounter, cCounter);
 

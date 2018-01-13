@@ -32,7 +32,7 @@ If you have any issues or questions please contact me via email. Email: eyesiced
 * CSS
 * Bootstrap
 * JavaScript
-* Jquery-3.2.1.
+* Jquery-3.2.1
 
 ### _License_
 
